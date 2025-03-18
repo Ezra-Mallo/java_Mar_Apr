@@ -18,49 +18,57 @@ public class VowelsConsonantMultipleIf
     {
         //65, 69, 73, 79, 85
         //97, 101, 105, 111, 117
-        if (myChar == 65)
+        if ((myChar >= 65 && myChar <=90) || (myChar >= 97 && myChar <=122) )
         {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar == 69)        
+            if (myChar == 65)  // A
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar == 69) // E
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar == 73)     // I   
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar == 79)     // O
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar == 85)     // U   
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar == 97)        // a
+            {  
+                System.out.printf("%c is vowel",myChar);  
+            }           
+            else if (myChar == 101)       // e
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar ==105)        // i
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar == 111)        // o
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else if (myChar == 117) // o
+            {
+                System.out.printf("%c is vowel",myChar);
+            }  
+            else  
+            {
+                System.out.printf("%c is consonant",myChar);
+
+            }
+        }
+        else
         {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar == 73)        
-        {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar == 79)        
-        {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar == 85)        
-        {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar == 97)        
-        {  
-            System.out.printf("%c is vowel",myChar);  
-        }           
-        else if (myChar == 101)       
-        {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar ==105)        
-        {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar == 111)        
-        {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else if (myChar == 117) 
-        {
-            System.out.printf("%c is vowel",myChar);
-        }  
-        else  
-        {
-            System.out.printf("%c is consonant",myChar);
+            System.out.printf("%c is not an alphabet.",myChar);
 
         }
 

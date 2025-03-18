@@ -1,0 +1,35 @@
+@startuml
+
+actor BusinessOwner
+actor Customer
+actor Admin
+
+participant "E-Commerce System" as System
+participant "Product Database" as ProductDB
+participant "Order Database" as OrderDB
+participant "Payment Gateway" as PaymentGW
+
+== Add Product (Business Owner) ==
+BusinessOwner -> System : Add product details
+System -> ProductDB : Save product
+ProductDB --> System : Confirmation
+System --> BusinessOwner : Product added
+
+== Checkout Product/Payment (Customer) ==
+Customer -> System : Select product, add to cart
+System -> OrderDB : Create order
+OrderDB --> System : Order saved
+System -> PaymentGW : Process payment
+PaymentGW --> System : Payment confirmation
+System --> Customer : Order confirmed
+
+== Resolve Dispute (Admin) ==
+Customer -> System : Raise dispute
+System -> Admin : Notify dispute
+Admin -> System : Review dispute
+System -> OrderDB : Fetch order details
+OrderDB --> System : Order information
+Admin -> System : Resolve dispute
+System --> Customer : Dispute resolved
+
+@enduml
