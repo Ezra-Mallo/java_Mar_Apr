@@ -61,8 +61,5 @@ public class ArraysDemo
         System.out.println("\nUsing Array)");
         System.out.printf("Sum = %.2f, average = %.2f\n",sum, average);
 
-
-
-
     }
 }
