@@ -11,6 +11,7 @@ public class Cat extends AnimalBaseClass
     @Override
     public void makeSound()
     {
+        super.makeSound();
         System.out.printf("%s says: Meow Meow!\n",getAnimalName());
     }
     

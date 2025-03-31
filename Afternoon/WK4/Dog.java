@@ -1,10 +1,10 @@
-public class Dog extends AnimalBaseClass
+public class Dog extends Cat
 {
     private String dogBreed;
 
-    public Dog(String dogName, int dogAge, String breed)
+    public Dog(String dogName, int dogAge, String breed, String dogColor)
     {
-        super(dogName, dogAge);
+        super(dogName, dogAge, dogColor);
         this.dogBreed = breed;
     }
 
@@ -12,6 +12,7 @@ public class Dog extends AnimalBaseClass
     @Override
     public void makeSound()
     {
+        super.makeSound();
         System.out.printf("%s says: Woof Woof!\n",getAnimalName());
     }
 

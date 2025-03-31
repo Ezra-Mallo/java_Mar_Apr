@@ -21,9 +21,12 @@ public class Cat extends AniamalBaseClass
         catColour = colour;
     }
 
+
+
     @Override
     public void makeSound()
     {
+        super.makeSound();   // This calls the make sound of the Super/Parent/Base class =
         System.out.printf("%s says: Meow Meow!.\n", getAnimalName());
     }
 }

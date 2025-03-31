@@ -19,11 +19,11 @@ public class TestAnimalBaseClass
         aCat.makeSound();
         System.out.println("------------------------\n");
         
-        Dog aDog = new Dog("Steve the dog", 4, "Golden retriever");
+        Dog aDog = new Dog("Steve the dog", 4, "Golden retriever", "Brown");
         name = aDog.getAnimalName();
         age = aDog.getAnimalAge();
         String breed = aDog.getDogBreed();
-        System.out.printf("%s, is %d yrs old and is a %s breed.!\n", name, age, breed);
+        System.out.printf("%s, is %d yrs old and is a %s breed.!\n", name, age, breed, color);
         aDog.makeSound();
         System.out.println("------------------------\n");
         

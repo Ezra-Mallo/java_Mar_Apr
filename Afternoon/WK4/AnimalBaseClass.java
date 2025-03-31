@@ -11,7 +11,7 @@ public class AnimalBaseClass
 
     public void makeSound()
     {
-        System.out.println("This animal make a sound!");
+        System.out.println("This animal makes a sound!");
     }
 
 

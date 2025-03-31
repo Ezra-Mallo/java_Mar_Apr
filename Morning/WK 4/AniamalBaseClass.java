@@ -9,7 +9,7 @@ public class AniamalBaseClass
         this.animalAge = age;
     }
 
-    public void makeSound()
+    public  void makeSound()
     {
         System.out.println("This animal makes a sound!.");
     }
