@@ -9,6 +9,7 @@ public class ArithmeticExceptionError
 
         for (int k = 0; k < 5; k++)
         {
+            System.out.printf("--------------#%d-----------\n",(k + 1));
             System.out.print("Enter the numerator: ");
             numerator = s.nextDouble();
     
@@ -18,8 +19,5 @@ public class ArithmeticExceptionError
             result = numerator / denominator;
             System.out.printf("%.2f / %.2f = %.2f\n", numerator, denominator, result);
         }
-
-
-
     }
 }

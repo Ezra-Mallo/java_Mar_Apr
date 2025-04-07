@@ -1,6 +1,7 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ArithmeticExceptionErrorResolved
+public class MultipleTryAndCatchDemo1
 {
     public static void main(String[] arg) {
         Scanner s = new Scanner(System.in); // Scanner should be outside the try block
@@ -24,9 +25,24 @@ public class ArithmeticExceptionErrorResolved
                 double result = numerator / denominator;
                 System.out.printf("%.2f / %.2f = %.2f\n", numerator, denominator, result);
             } 
-            catch (ArithmeticException exceptionObject) 
+            catch (ArithmeticException e) 
             {
-                System.out.println("Error: " + exceptionObject.getMessage());
+                System.out.println("---- caught ArithmeticException ----");
+                System.out.println("Error: " + e.getMessage());
+                s.next();
+                k--;
+            }
+            catch (InputMismatchException e) 
+            {
+                System.out.println("---- caught InputMismatchException ----");
+                System.out.println("Error: " + e.getMessage());
+                s.next();
+                k--;
+            }
+            catch (NullPointerException e) 
+            {
+                System.out.println("---- caught NullPointerException ----");
+                System.out.println("Error: " + e.getMessage());
                 s.next();
                 k--;
             }

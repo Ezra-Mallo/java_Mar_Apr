@@ -1,0 +1,7 @@
+1001,Akashdeep,LNU,akashdeep.lnu@swdv.ca,98.00,A
+1002,Ansh,Pasricha,ansh.pasricha@swdv.ca,88.00,A
+1003,Ayan,Vahora,ayan.vahora@swdv.ca,78.00,B
+1004,Chahana,Moktan,chahana.moktan@swdv.ca,68.00,C
+1005,Ekamjot,LNU,ekamjot.lnu@swdv.ca,58.00,D
+1006,Ezra,Mallo,ezra.mallo@swdv.ca,48.00,E
+1007,	Yi,	Zhang,	yi.zhang@swdv.ca,99.0,A

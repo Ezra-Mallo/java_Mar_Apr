@@ -18,10 +18,10 @@ public class ArrayIndexExceptionErrorResolved
                 System.out.printf("%.2f\n", numbList[index]);
             }
         }
-        catch(ArrayIndexOutOfBoundsException ex)
+        catch(ArrayIndexOutOfBoundsException exceptionObject)
         {
             System.out.println("----------------------------");
-            System.out.println(ex.getMessage());       
+            System.out.println(exceptionObject.getMessage());       
             System.out.println("The index you enters is not between 0...9");       
             
     

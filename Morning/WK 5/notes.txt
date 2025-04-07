@@ -1,0 +1,2 @@
+This is a sample text file containing notes.
+Java file operations example.

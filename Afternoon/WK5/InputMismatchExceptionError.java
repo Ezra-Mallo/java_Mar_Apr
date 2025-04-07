@@ -9,7 +9,8 @@ public class InputMismatchExceptionError
 
         for (int k = 0; k < 5; k++)
         {       
-            
+            System.out.printf("-------------#%d---------------\n",(k+1));
+
             System.out.print("Enter the 1st number: ");
             num1 = s.nextDouble();
 
@@ -18,9 +19,7 @@ public class InputMismatchExceptionError
 
             result = num1 + num2;
             System.out.printf("%.2f + %.2f = %.2f\n", num1, num2, result);
-        }
-
-        
+        }  
 
 
 

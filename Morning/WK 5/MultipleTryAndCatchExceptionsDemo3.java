@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ArithmeticExceptionErrorResolved
+public class MultipleTryAndCatchExceptionsDemo3
 {
     public static void main(String[] arg) {
         Scanner s = new Scanner(System.in); // Scanner should be outside the try block
@@ -9,6 +9,7 @@ public class ArithmeticExceptionErrorResolved
         {
             try 
             {
+                System.out.printf("-------------#%d-----------------\n",(k + 1));
                 System.out.print("Enter the numerator: ");
                 double numerator = s.nextDouble();
         
@@ -21,12 +22,21 @@ public class ArithmeticExceptionErrorResolved
 
                 double result = numerator / denominator;
                 System.out.printf("%.2f / %.2f = %.2f\n", numerator, denominator, result);
-            } 
-            catch (ArithmeticException exceptionObject) 
+            }           
+            catch (Exception e)
             {
-                System.out.println("Error: " + exceptionObject.getMessage());
+                System.out.println("Error: "+ e.getMessage());     
+                s.next();
+                k--;
+                  
             }
+            finally
+            {
+                System.out.println("---------------------------------");
+
+            }
+
         }
-        s.close(); // Close scanner to prevent resource leaks
+        s.close();
     }
 }

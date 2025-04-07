@@ -1,0 +1,5 @@
+1001,Amrit,Kaler,amrit.kaler@swdv.rdp.ca,98.00,A
+1002,Ramjit,LNU,ramjit.lnu@swdv.rdp.ca,88.00,A
+1003, Husanpreet,LNU,husanpreet.lnu@swdv.rdp.ca,88.00,A
+1004,James,Acobo,james.acobo@swdv.rdp.ca,90.0,A
+1005,Martin,Assah,martin.assah@swdv.rdp.ca,99.00,A

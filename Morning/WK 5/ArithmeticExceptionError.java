@@ -18,8 +18,5 @@ public class ArithmeticExceptionError
             result = numerator / denominator;
             System.out.printf("%.2f / %.2f = %.2f\n", numerator, denominator, result);
         }
-
-
-
     }
 }
